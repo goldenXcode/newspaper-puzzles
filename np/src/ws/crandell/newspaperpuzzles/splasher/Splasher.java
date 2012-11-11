@@ -188,22 +188,7 @@ public class Splasher extends Activity {
 		  	
 		  beginAnimation();
 		  
-		  
-//		    editor = getSharedPreferences("SpasherPreferences", 0).edit();
-//		    if (!((SharedPreferences) editor).getBoolean("PlayedBefore", true)) {
-////		    	this.finishActivity(getTaskId());
-////				startActivity(new Intent(Splasher.this, WordSearchActivity.class));
-////				this.finish();
-//		    }
-//		    if (((SharedPreferences) editor).getString("PlayING", "Now") != null) {
-//		    	
-//		        editor.putString("PlayING", "Later");
-//		        editor.commit();
-//				this.finish();
-//		    }
-//		    if (!((SharedPreferences) editor).getBoolean("PlayedBefore", false)) {
-//				beginAnimation();
-//		    }
+
 		  }
 	
 }
