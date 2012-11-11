@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="ws.crandell.newspaperpuzzles"
+	android:installLocation="auto"
+	android:versionName="0.9.1" android:versionCode="8">
+
+	<supports-screens android:smallScreens="true"
+		android:normalScreens="true" android:largeScreens="true"
+		android:anyDensity="true" />
+	
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="10" />
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+			<activity android:noHistory="true" android:name="ws.crandell.newspaperpuzzles.splasher.Splasher" android:label="Newspaper Puzzles"
+			android:launchMode="singleInstance">
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+		<activity android:name="ws.crandell.newspaperpuzzles.splasher.Launcher" android:label="Newspaper Puzzles"
+			android:launchMode="singleInstance" android:screenOrientation="sensorPortrait">
+			<intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+			</intent-filter>
+		</activity>
+		<activity android:icon="@drawable/ws_icon" android:name=".wordsearch.view.WordSearchActivity" android:label="@string/ws_app_name"
+			android:theme="@style/themeBase"
+			android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+		<activity android:icon="@drawable/ws_icon" android:name=".CrashActivity" android:theme="@style/themeBase"
+			android:windowSoftInputMode="adjustResize" />
+		<provider android:name=".wordsearch.view.WordDictionaryProvider"
+			android:authorities="ws.crandell.newspaperpuzzles.wordsearch.provider.words" />
+		<activity android:icon="@drawable/ws_icon" android:name=".wordsearch.view.WordListActivity" android:label="@string/ws_wordlist_name"
+			android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<action android:name="android.intent.action.EDIT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.ws.crandell.newspaperpuzzles.word" />
+			</intent-filter>
+		</activity>
+		<activity android:icon="@drawable/ws_icon" android:name=".wordsearch.view.TutorialActivity" android:label="@string/ws_tutorial"
+			android:launchMode="singleInstance">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+			</intent-filter>
+		</activity>
+		<activity android:icon="@drawable/ws_icon" android:name=".wordsearch.view.WordSearchPreferences"
+		        android:theme="@android:style/Theme.Dialog" android:label="@string/ws_options">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+			</intent-filter>
+		</activity>
+		<service android:name=".wordsearch.view.IOService" />
+		
+		
+		<activity android:icon="@drawable/s_opensudoku_logo_72" android:name=".sudoku.gui.FolderListActivity"
+				  android:label="@string/sudoku_app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".sudoku.gui.SudokuListActivity"
+		          android:icon="@drawable/s_opensudoku_logo_72"
+				  android:label="@string/sudoku_app_name">
+		</activity>
+		<activity android:name=".sudoku.gui.SudokuEditActivity"
+		          android:icon="@drawable/s_opensudoku_logo_72" 
+				  android:label="@string/s_edit_sudoku">
+			<intent-filter>
+				<action android:name="android.intent.action.INSERT"/>
+				<action android:name="android.intent.action.EDIT"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".sudoku.gui.FileImportActivity"
+				  android:label="@string/s_app_name"
+				  android:icon="@drawable/s_opensudoku_logo_72" 
+				  android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:scheme="file" android:host="*" android:pathPattern=".*\\.sdm"/>
+				<data android:scheme="http" android:host="*" android:pathPattern=".*\\.sdm"/>
+				<data android:scheme="file" android:host="*" android:pathPattern=".*\\.sudoku"/>
+				<data android:scheme="http" android:host="*" android:pathPattern=".*\\.sudoku"/>
+			</intent-filter>
+		</activity>
+		<!-- This activity is here to keep backward compatibility, use SudokuImportActivity instead. -->
+		<activity android:icon="@drawable/s_opensudoku_logo_72" android:name=".sudoku.gui.ImportSudokuActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+			</intent-filter>
+		</activity>
+		<activity android:name=".sudoku.gui.SudokuImportActivity"
+				  android:label="@string/sudoku_app_name"
+				  android:icon="@drawable/s_opensudoku_logo_72" 
+				  android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:mimeType="application/x-sudoku"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".sudoku.gui.SudokuExportActivity"
+		          android:icon="@drawable/s_opensudoku_logo_72" 
+				  android:label="@string/sudoku_app_name">
+		</activity>
+		<activity android:name=".sudoku.gui.SudokuPlayActivity"
+		          android:icon="@drawable/s_opensudoku_logo_72" 
+				  android:label="@string/sudoku_app_name">
+		</activity>
+		<activity android:name=".sudoku.gui.GameSettingsActivity"
+		          android:icon="@drawable/s_opensudoku_logo_72" 
+				  android:label="@string/s_game_settings">
+		</activity>
+		<activity android:name="ws.crandell.newspaperpuzzles.sudoku.gui.FileListActivity"
+				  android:icon="@drawable/s_opensudoku_logo_72" 
+				  android:label="@string/sudoku_app_name">
+		</activity>
+		
+		
+        <activity
+            android:label="Download to Crossword"
+            android:icon="@drawable/cw_icon"
+            android:name="ws.crandell.newspaperpuzzles.crossword.HttpDownloadActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:pathPattern=".*\\.puz"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/cw_app_name"
+            android:icon="@drawable/cw_icon"
+            android:name="ws.crandell.newspaperpuzzles.crossword.PlayActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:pathPattern=".*\\.puz"
+                    android:scheme="file" />
+                <data
+                    android:mimeType="application/x-crossword"
+                    android:scheme="file" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Settings"
+            android:icon="@drawable/cw_icon"
+            android:name="ws.crandell.newspaperpuzzles.crossword.PreferencesActivity" >
+        </activity>
+        <activity
+            android:label="Clues"
+            android:icon="@drawable/cw_icon"
+            android:name="ws.crandell.newspaperpuzzles.crossword.ClueListActivity" >
+        </activity>
+        <activity
+            android:label="NPP-Crossword"
+            android:icon="@drawable/cw_icon"
+            android:name="ws.crandell.newspaperpuzzles.crossword.HTMLActivity" >
+        </activity>
+        <activity
+            android:label="@string/cw_app_name"
+            android:icon="@drawable/cw_icon"
+            android:name="ws.crandell.newspaperpuzzles.crossword.BrowseActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:icon="@drawable/cw_icon"
+            android:label="Browse for Puzzles"
+            android:name="ws.crandell.newspaperpuzzles.crossword.WebBrowserActivity" >
+        </activity>
+        <activity
+            android:label="Puzzle Completed!"
+            android:icon="@drawable/cw_icon"
+            android:name="ws.crandell.newspaperpuzzles.crossword.PuzzleFinishedActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <receiver android:name="ws.crandell.newspaperpuzzles.crossword.net.DownloadReceiver" >
+            <intent-filter >
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        
+    
+	</application>
+	
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    
+</manifest> 

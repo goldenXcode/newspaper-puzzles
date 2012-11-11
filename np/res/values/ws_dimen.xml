@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="ws_grid_padding">5sp</dimen>
+	<dimen name="ws_button">20sp</dimen>
+	<dimen name="ws_wordlist_view">16sp</dimen>
+	<dimen name="ws_grid_view">28sp</dimen>
+	<dimen name="ws_word_box">32sp</dimen>
+	<dimen name="ws_letter_box">35sp</dimen>
+	<dimen name="ws_tutorial_heading_font">28sp</dimen>
+	<dimen name="ws_tutorial_heading_padding">5sp</dimen>
+	<dimen name="ws_tutorial_message_font">20sp</dimen>
+	<dimen name="ws_tutorial_message_padding">3sp</dimen>
+</resources>

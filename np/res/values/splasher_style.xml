@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplasherStyler">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_gravity">center</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:textSize">@dimen/splasher_text_size</item>
+    	<item name="android:textColor">@color/splasher_head_text</item>
+    	<item name="android:lineSpacingExtra">@dimen/splasher_text_spacing</item>
+    </style>
+</resources>

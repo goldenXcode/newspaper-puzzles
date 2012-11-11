@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- simple strings that are probably not nessasary to internationalize -->
+	<string name="ws_prev">&lt;</string>
+	<string name="ws_next">&gt;</string>
+
+	<!-- tutorial tip sets -->
+	<string-array name="ws_tutorial_messages_drag">
+		<item>@string/ws_tutorial_message_drag1</item>
+		<item>@string/ws_tutorial_message_drag2</item>
+		<item>@string/ws_tutorial_message_drag3</item>
+		<item>@string/ws_tutorial_message_drag4</item>
+	</string-array>
+	<string-array name="ws_tutorial_messages_trackball">
+		<item>@string/ws_tutorial_message_trackball1</item>
+		<item>@string/ws_tutorial_message_trackball2</item>
+		<item>@string/ws_tutorial_message_trackball3</item>
+	</string-array>
+	<string-array name="ws_tutorial_messages_tap">
+		<item>@string/ws_tutorial_message_tap1</item>
+		<item>@string/ws_tutorial_message_tap2</item>
+		<item>@string/ws_tutorial_message_tap3</item>
+	</string-array>
+	<string-array name="ws_tutorial_messages_tips">
+		<item>@string/ws_tutorial_message_tip1</item>
+		<item>@string/ws_tutorial_message_tip2</item>
+		<item>@string/ws_tutorial_message_tip3</item>
+		<item>@string/ws_tutorial_message_tip4</item>
+		<item>@string/ws_tutorial_message_tip5</item>
+		<item>@string/ws_tutorial_message_tip6</item>
+		<item>@string/ws_tutorial_message_tip7</item>
+		<item>@string/ws_tutorial_message_tip8</item>
+	</string-array>
+
+	<!-- input type preference choices -->
+	<string-array name="ws_touch_mode_list_labels">
+		<item>@string/ws_drag</item>
+		<item>@string/ws_tap</item>
+	</string-array>
+	<string-array name="ws_touch_mode_list_values">
+		<item>@string/ws_DRAG</item>
+		<item>@string/ws_TAP</item>
+	</string-array>
+	<string name="ws_DRAG">ws_DRAG</string>
+	<string name="ws_TAP">ws_TAP</string>
+	
+	<!-- size preference choices -->
+	<string-array name="ws_sizes_list_labels">
+		<item>7x7</item>
+		<item>8x8</item>
+		<item>9x9</item>
+		<item>10x10</item>
+		<item>11x11</item>
+	</string-array>
+	<string-array name="ws_sizes_list_values">
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+	</string-array>
+	<string name="ws_SIZE_DEFAULT">10</string>
+
+	<!-- category preference choices -->
+	<string-array name="ws_categories_list_labels">
+		<item>@string/ws_foods</item>
+		<item>@string/ws_seasonal</item>
+		<item>@string/ws_christmas</item>
+		<item>@string/ws_places</item>
+		<item>@string/ws_animals</item>
+		<item>@string/ws_people</item>
+		<item>@string/ws_adjectives</item>
+		<item>@string/ws_german</item>
+		<item>@string/ws_kids</item>
+		<item>@string/ws_sat</item>
+		<item>@string/ws_misc</item>
+		<item>@string/ws_insane</item>
+		<item>@string/ws_numbers</item>
+		<item>@string/ws_custom</item>
+		<item>@string/ws_random</item>
+	</string-array>
+	<string-array name="ws_categories_list_values">
+		<item>@string/ws_FOODS</item>
+		<item>@string/ws_SEASONAL</item>
+		<item>@string/ws_CHRISTMAS</item>
+		<item>@string/ws_PLACES</item>
+		<item>@string/ws_ANIMALS</item>
+		<item>@string/ws_PEOPLE</item>
+		<item>@string/ws_ADJECTIVES</item>
+		<item>@string/ws_GERMAN</item>
+		<item>@string/ws_KIDS</item>
+		<item>@string/ws_SAT</item>
+		<item>@string/ws_MISC</item>
+		<item>@string/ws_INSANE</item>
+		<item>@string/ws_NUMBERS</item>
+		<item>@string/ws_CUSTOM</item>
+		<item>@string/ws_RANDOM</item>
+	</string-array>
+
+	<!-- category preference choices -->
+	<string name="ws_THEME_ORIGINAL">ORIGINAL</string>
+	<string name="ws_THEME_NIGHTSKY">NIGHTSKY</string>
+	<string name="ws_THEME_SKY">SKY</string>
+	<string name="ws_THEME_PINK">PINK</string>
+	<string name="ws_THEME_SEAGREEN">SEAGREEN</string>
+	<string-array name="ws_THEME_VALUES">
+		<item>@string/ws_THEME_ORIGINAL</item>
+		<item>@string/ws_THEME_NIGHTSKY</item>
+		<item>@string/ws_THEME_SKY</item>
+		<item>@string/ws_THEME_PINK</item>
+		<item>@string/ws_THEME_SEAGREEN</item>
+	</string-array>
+	<string-array name="ws_THEME_LABELS">
+		<item>@string/ws_ORIGINAL</item>
+		<item>@string/ws_NIGHTSKY</item>
+		<item>@string/ws_SKY</item>
+		<item>@string/ws_PINK</item>
+		<item>@string/ws_SEAGREEN</item>
+	</string-array>
+
+	<!-- DictionaryType Enum values -->
+	<string name="ws_FOODS">FOODS</string>
+	<string name="ws_SEASONAL">SEASONAL</string>
+	<string name="ws_CHRISTMAS">CHRISTMAS</string>
+	<string name="ws_PLACES">PLACES</string>
+	<string name="ws_ANIMALS">ANIMALS</string>
+	<string name="ws_PEOPLE">PEOPLE</string>
+	<string name="ws_ADJECTIVES">ADJECTIVES</string>
+	<string name="ws_GERMAN">GERMAN</string>
+	<string name="ws_KIDS">KIDS</string>
+	<string name="ws_SAT">SAT</string>
+	<string name="ws_MISC">MISC</string>
+	<string name="ws_NUMBERS">NUMBERS</string>
+	<string name="ws_CUSTOM">CUSTOM</string>
+	<string name="ws_INSANE">INSANE</string>
+	<string name="ws_RANDOM">RANDOM</string>
+
+	<!-- stored preferences names -->
+	<string name="ws_prefs_size">size4</string>
+	<string name="ws_prefs_touch_mode">touch_mode1</string>
+	<string name="ws_prefs_category">category1</string>
+	<string name="ws_PREFS_THEME">theme</string>
+
+</resources>

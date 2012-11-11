@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="Crossword">Crossword</string>
+    <string name="Sudoku">Sudoku</string>
+    <string name="WordSearch">WordSearch</string>
+    <string name="AppDisc">Puzzles that are traditionally done with pen and paper</string>
+    <string name="app_name">Newspaper Puzzles</string>
+    <string name="splasher_head">NEWSPAPER</string>
+    <string name="splasher_Foot">PUZZLES</string>
+</resources>

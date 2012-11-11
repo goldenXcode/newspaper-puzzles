@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference android:key="@string/ws_prefs_size"
+		android:title="@string/ws_size" android:defaultValue="10"
+		android:summary="@string/ws_prefs_size_summary"
+		android:entryValues="@array/ws_sizes_list_values"
+		android:entries="@array/ws_sizes_list_labels" />
+	<ListPreference android:key="@string/ws_prefs_category"
+		android:title="@string/ws_category" android:defaultValue="@string/ws_RANDOM"
+		android:summary="@string/ws_prefs_category_summary"
+		android:entryValues="@array/ws_categories_list_values"
+		android:entries="@array/ws_categories_list_labels" />
+	<ListPreference android:key="@string/ws_prefs_touch_mode"
+		android:title="@string/ws_input_type" android:defaultValue="@string/ws_DRAG"
+		android:summary="@string/ws_prefs_touch_mode_summary"
+		android:entryValues="@array/ws_touch_mode_list_values"
+		android:entries="@array/ws_touch_mode_list_labels" />
+	<ListPreference android:key="@string/ws_PREFS_THEME"
+		android:title="@string/ws_THEME" android:defaultValue="@string/ws_THEME_ORIGINAL"
+		android:summary="@string/ws_PREFS_THEME_SUMMARY"
+		android:entryValues="@array/ws_THEME_VALUES"
+		android:entries="@array/ws_THEME_LABELS" />
+</PreferenceScreen>

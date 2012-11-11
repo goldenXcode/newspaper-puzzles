@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="ws_grid_view">23sp</dimen>
+	<dimen name="ws_button">18sp</dimen>
+	<dimen name="ws_word_box">26sp</dimen>
+	<dimen name="ws_letter_box">30sp</dimen>
+</resources>

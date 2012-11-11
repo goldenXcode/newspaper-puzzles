@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="s_SeekBarPreference">
+		<attr name="s_min" format="integer"/>
+		<attr name="s_max" format="integer"/>
+		<attr name="s_value" format="integer"/>
+		<attr name="s_valueFormat" format="string"/>
+	</declare-styleable>
+	<declare-styleable name="s_SudokuBoardView">
+		<attr name="s_lineColor" format="color"/>
+		<attr name="s_sectorLineColor" format="color"/>
+		<attr name="s_textColor" format="color"/>
+		<attr name="s_textColorReadOnly" format="color"/>
+		<attr name="s_textColorNote" format="color"/>
+		<attr name="s_backgroundColor" format="color"/>
+		<attr name="s_backgroundColorSecondary" format="color"/>
+		<attr name="s_backgroundColorReadOnly" format="color"/>
+		<attr name="s_backgroundColorTouched" format="color"/>
+		<attr name="s_backgroundColorSelected" format="color"/>
+	</declare-styleable>
+</resources>

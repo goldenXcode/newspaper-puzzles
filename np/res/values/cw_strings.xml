@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cw_hello">Hello World, Play!</string>
+    <string name="cw_app_name">Crosswords</string>
+    <string name="cw_puzzle_select">Select a puzzle:</string>
+</resources>
