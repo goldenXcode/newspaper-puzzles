@@ -257,7 +257,7 @@ public class BrowseActivity extends CrosswordActivity implements OnItemClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setTitle("Shortyz - Puzzles");
+        this.setTitle("Crosswords -Newspaper Puzzles");
         setDefaultKeyMode(DEFAULT_KEYS_SHORTCUT);
         this.setContentView(R.layout.cw_browse);
         this.puzzleList = (ListView) this.findViewById(R.id.puzzleList);
