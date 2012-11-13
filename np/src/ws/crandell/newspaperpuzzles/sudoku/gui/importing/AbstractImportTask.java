@@ -15,7 +15,7 @@ import ws.crandell.newspaperpuzzles.R;
 
 /**
  * To add support for new import source, do following:
- * <p/>attr
+ * <p/>
  * 1) Subclass this class. Any input parameters specific for your import should be put
  * in constructor of your class.
  * 2) In {@link #processImport()} method process your data source (parse file or maybe download

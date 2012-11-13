@@ -30,8 +30,6 @@ public class SudokuImportTask extends AbstractImportTask {
 
 	public SudokuImportTask(Uri uri) {
 		mUri = uri;
-		
-		
 	}
 
 	@Override
