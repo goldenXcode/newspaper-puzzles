@@ -795,7 +795,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_max
+          @attr name ws.crandell.newspaperpuzzles:s_max
         */
         public static final int s_SeekBarPreference_s_max = 1;
         /**
@@ -809,7 +809,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_min
+          @attr name ws.crandell.newspaperpuzzles:s_min
         */
         public static final int s_SeekBarPreference_s_min = 0;
         /**
@@ -823,7 +823,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_value
+          @attr name ws.crandell.newspaperpuzzles:s_value
         */
         public static final int s_SeekBarPreference_s_value = 2;
         /**
@@ -837,7 +837,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_valueFormat
+          @attr name ws.crandell.newspaperpuzzles:s_valueFormat
         */
         public static final int s_SeekBarPreference_s_valueFormat = 3;
         /** Attributes that can be used with a s_SudokuBoardView.
@@ -885,7 +885,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_backgroundColor
+          @attr name ws.crandell.newspaperpuzzles:s_backgroundColor
         */
         public static final int s_SudokuBoardView_s_backgroundColor = 5;
         /**
@@ -900,7 +900,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_backgroundColorReadOnly
+          @attr name ws.crandell.newspaperpuzzles:s_backgroundColorReadOnly
         */
         public static final int s_SudokuBoardView_s_backgroundColorReadOnly = 7;
         /**
@@ -915,7 +915,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_backgroundColorSecondary
+          @attr name ws.crandell.newspaperpuzzles:s_backgroundColorSecondary
         */
         public static final int s_SudokuBoardView_s_backgroundColorSecondary = 6;
         /**
@@ -930,7 +930,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_backgroundColorSelected
+          @attr name ws.crandell.newspaperpuzzles:s_backgroundColorSelected
         */
         public static final int s_SudokuBoardView_s_backgroundColorSelected = 9;
         /**
@@ -945,7 +945,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_backgroundColorTouched
+          @attr name ws.crandell.newspaperpuzzles:s_backgroundColorTouched
         */
         public static final int s_SudokuBoardView_s_backgroundColorTouched = 8;
         /**
@@ -960,7 +960,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_lineColor
+          @attr name ws.crandell.newspaperpuzzles:s_lineColor
         */
         public static final int s_SudokuBoardView_s_lineColor = 0;
         /**
@@ -975,7 +975,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_sectorLineColor
+          @attr name ws.crandell.newspaperpuzzles:s_sectorLineColor
         */
         public static final int s_SudokuBoardView_s_sectorLineColor = 1;
         /**
@@ -990,7 +990,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_textColor
+          @attr name ws.crandell.newspaperpuzzles:s_textColor
         */
         public static final int s_SudokuBoardView_s_textColor = 2;
         /**
@@ -1005,7 +1005,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_textColorNote
+          @attr name ws.crandell.newspaperpuzzles:s_textColorNote
         */
         public static final int s_SudokuBoardView_s_textColorNote = 4;
         /**
@@ -1020,7 +1020,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:s_textColorReadOnly
+          @attr name ws.crandell.newspaperpuzzles:s_textColorReadOnly
         */
         public static final int s_SudokuBoardView_s_textColorReadOnly = 3;
     };

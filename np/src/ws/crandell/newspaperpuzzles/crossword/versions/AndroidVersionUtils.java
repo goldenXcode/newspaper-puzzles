@@ -42,28 +42,37 @@ public interface AndroidVersionUtils {
 					+ android.os.Build.VERSION.SDK_INT);
 
 			try {
-				switch (android.os.Build.VERSION.SDK_INT) {
-				case 11:
-				case 12:
-				case 13:
-				case 14:
-				case 15:
-				
-					return INSTANCE = (AndroidVersionUtils) Class.forName(
-							"ws.crandell.newspaperpuzzles.crossword.versions.HoneycombUtil")
-							.newInstance();
-				case 16:
-				case 17:
+//				switch (android.os.Build.VERSION.SDK_INT) {
+//				case 11:
+//				case 12:
+//				case 13:
+//				case 14:
+//				case 15:
+//				
+//					return INSTANCE = (AndroidVersionUtils) Class.forName(
+//							"ws.crandell.newspaperpuzzles.crossword.versions.HoneycombUtil")
+//							.newInstance();
+//				case 16:
+//				case 17:
+				if(android.os.Build.VERSION.SDK_INT >= 16){
 					return INSTANCE = (AndroidVersionUtils) Class.forName(
 							"ws.crandell.newspaperpuzzles.crossword.versions.JellyBeanUtil")
 							.newInstance();
+				}
+				switch (android.os.Build.VERSION.SDK_INT) {
 				case 10:
 				case 9:
 					System.out.println("Using Gingerbread.");
 					return INSTANCE = (AndroidVersionUtils) Class.forName(
 							"ws.crandell.newspaperpuzzles.crossword.versions.GingerbreadUtil")
 							.newInstance();
-
+				case 12:
+				case 13:
+				case 14:
+				case 15:
+					return INSTANCE = (AndroidVersionUtils) Class.forName(
+					"com.totsp.crossword.versions.HoneycombUtil")
+					.newInstance();
 				default:
 					return INSTANCE = new DefaultUtil();
 				}

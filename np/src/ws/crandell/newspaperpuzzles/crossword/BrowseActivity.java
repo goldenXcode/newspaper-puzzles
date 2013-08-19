@@ -320,9 +320,9 @@ public class BrowseActivity extends CrosswordActivity implements OnItemClickList
 
             
             return;
-        } else if (prefs.getBoolean("release_0.9.1", true)) {
+        } else if (prefs.getBoolean("release_0.9.4", true)) {
             Editor e = prefs.edit();
-            e.putBoolean("release_0.9.1", false);
+            e.putBoolean("release_0.9.4", false);
             e.commit();
 
             Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("file:///android_asset/cw_release.html"), this,
